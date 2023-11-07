@@ -90,7 +90,7 @@ jobs:
         run: mvn clear verify #lance la commande pour le test
 ```
 
-[Voici le resultate de **SonarCould.](https://github.com/Kooitfeet/RenduDevOps/blob/master/Pasted%20image%2020231107150135.png)
+[Voici le resultat de *SonarCould*.](https://github.com/Kooitfeet/RenduDevOps/blob/master/Pasted%20image%2020231107150135.png)
 Nous voyons que nous avons 2 vulnérabilités de sécurité (dans l'onglet *security*) ainsi qu'un scanne de dossier de seulement 53.6% (dans l'onglet *Coverage*).
 *SonarCloud* conclut que l'analyse n'est pas bonne car il faut un pourcentage supérieur à 80%.
 
