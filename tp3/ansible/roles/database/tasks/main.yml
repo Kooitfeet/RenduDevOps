@@ -1,0 +1,11 @@
+---
+# tasks file for roles/database
+- name: Launch a Docker container for the database
+  docker_container:
+    name: my-db
+    image: mdum78/tp-devops-database:latest
+    state: started
+    networks:
+      - name: my-network
+  vars:
+    ansible_python_interpreter: /usr/bin/python3

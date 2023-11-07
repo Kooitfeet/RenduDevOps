@@ -1,0 +1,12 @@
+---
+# tasks file for roles/proxy
+- name: Launch a Docker container for the proxy
+  docker_container:
+    name: tp_devops_cg
+    image: mdum78/tp-devops-http-server:latest
+    state: started
+    networks:
+      - name: my-network
+    ports: "80:80"
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
